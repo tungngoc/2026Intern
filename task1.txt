@@ -1,1 +1,3 @@
 add file
+//Thanh add new line to this file
+New line added by Thanh
