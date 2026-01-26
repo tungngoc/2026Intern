@@ -1,3 +1,2 @@
 add file
-//Thanh add new code here
-code changes
+Resolved code 
