@@ -720,3 +720,6 @@ Son made change in README.
 ## Notes
 - Updated README by Thanh Dang
 - Practice creating Pull Request using VS Code
+Toan made change in README.
+Binh made some changes .
+
