@@ -1,2 +1,1 @@
 Q: Analyze using "cherry-pick" for fix bugs production?
-Hotfix testing by ThanhDang: Cherry-picking is well-suited for producing hotfixes because it allows for the precise application of bug fixes without affecting other functionality; however, it requires resynchronization with development to avoid lost fixes and history discrepancies.
