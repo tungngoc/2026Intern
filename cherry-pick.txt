@@ -2,7 +2,7 @@ Q: Analyze using "cherry-pick" for fix bugs production?
 Hotfix testing by ThanhDang: 
 - Cherry-picking is well-suited for producing hotfixes because it allows the precise application of specific bug-fix commits without impacting other features or untested changes. This approach helps reduce deployment risk and speed up production or UAT fixes.
 - However, cherry-picking also requires proper resynchronization with the development branch after the hotfix is deployed. Without this step, teams may face lost fixes, duplicate commits, or Git history discrepancies across branches.
-Step to use cherry-pick:
+My step to use cherry-pick:
 - Use cherry-pick for critical, isolated bug fixes only
 - Create a hotfix branch from UAT/Production
 - Keep commits small and focused
