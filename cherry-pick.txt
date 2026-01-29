@@ -1,1 +1,34 @@
 Q: Analyze using "cherry-pick" for fix bugs production?
+Hotfix testing by ThanhDang: Cherry-picking is well-suited for producing hotfixes because it allows for the precise application of bug fixes without affecting other functionality; however, it requires resynchronization with development to avoid lost fixes and history discrepancies.
+
+Hotfix anylyze by SonNguyen: 
+- In hotfix flow, "cherry-pick" is a precise and efficient tool that apply exactly one proven fix to production via a hotfix branch for
+deploy fast then merge back to keep history consistent.
+- Strategies for using:
+    - Use when a bug fix already exists on main or develop but production must stay stable.
+    - Apply only small, isolated bug-fix commits.
+    - Avoid commits that depend on refactors, schema changes, or breaking changes.
+    - Use a dedicated hotfix/* branch created from release/*.
+    - After deployment, merge the hotfix back into main and develop to keep branches aligned.
+
+Hotfix anylize by BinhHo, how to use:
+I'm working on feature branch, I pushed some commit: 
+
+- commit 1
+- commit 2 (commit is picked up to hotfix)
+
+Now, release branch only want to get commit 2 to fix bug from production. 
+
+From release branch we can use cherry-pcik to pick commit what we want. 
+
+Steps:
+Step 1: get id of commit 2, example: abcdef.
+
+Step 2: git checkout release-1
+
+Step 3: git **cherry-pick** abcdef 
+
+Step 4: git push 
+
+Step 5: Deploy
+
