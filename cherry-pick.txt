@@ -10,3 +10,25 @@ deploy fast then merge back to keep history consistent.
     - Avoid commits that depend on refactors, schema changes, or breaking changes.
     - Use a dedicated hotfix/* branch created from release/*.
     - After deployment, merge the hotfix back into main and develop to keep branches aligned.
+
+Hotfix anylize by BinhHo, how to use:
+I'm working on feature branch, I pushed some commit: 
+
+- commit 1
+- commit 2 (commit is picked up to hotfix)
+
+Now, release branch only want to get commit 2 to fix bug from production. 
+
+From release branch we can use cherry-pcik to pick commit what we want. 
+
+Steps:
+Step 1: get id of commit 2, example: abcdef.
+
+Step 2: git checkout release-1
+
+Step 3: git **cherry-pick** abcdef 
+
+Step 4: git push 
+
+Step 5: Deploy
+
