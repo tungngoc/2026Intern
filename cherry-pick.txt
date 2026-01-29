@@ -1,2 +1,12 @@
 Q: Analyze using "cherry-pick" for fix bugs production?
 Hotfix testing by ThanhDang: Cherry-picking is well-suited for producing hotfixes because it allows for the precise application of bug fixes without affecting other functionality; however, it requires resynchronization with development to avoid lost fixes and history discrepancies.
+
+Hotfix anylyze by SonNguyen: 
+- In hotfix flow, "cherry-pick" is a precise and efficient tool that apply exactly one proven fix to production via a hotfix branch for
+deploy fast then merge back to keep history consistent.
+- Strategies for using:
+    - Use when a bug fix already exists on main or develop but production must stay stable.
+    - Apply only small, isolated bug-fix commits.
+    - Avoid commits that depend on refactors, schema changes, or breaking changes.
+    - Use a dedicated hotfix/* branch created from release/*.
+    - After deployment, merge the hotfix back into main and develop to keep branches aligned.
