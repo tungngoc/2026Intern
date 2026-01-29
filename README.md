@@ -716,3 +716,16 @@ Upon successful completion (≥70 points), interns will receive a certificate sh
 
 ---
 Son made change in README.
+
+## Notes
+- Updated README by Thanh Dang.
+- Practice creating Pull Request using VS Code.
+Toan made change in README.
+Binh made some changes .
+
+
+Test readme
+Changes
+=======
+ Test update 
+
