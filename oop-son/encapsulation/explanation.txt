@@ -1,0 +1,2 @@
+Encapsulation
+- The properties (fields) are declared private and have public getters/setters. This hides the internal representation from the client.

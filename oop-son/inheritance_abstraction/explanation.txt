@@ -1,0 +1,8 @@
+Abstraction
+- BaseIntegrationTest abstracts the general configuration (start containers, setProperties), hiding the initialization details of
+Mongo/Redis from specific tests.
+- Helper methods in the test (e.g., createProduct, createValidProductRequest) also abstract the creation of test data.
+
+Inheritance
+- BaseIntegrationTest is an abstract class, and the test classes (ProductIntegrationTest, SortFilterIntegrationTest, SearchProductIntegrationTest) all extend BaseIntegrationTest.
+- Proof: BaseIntegrationTest provides Testcontainers and DynamicPropertySource initialization, and the test classes inherit that behavior.
